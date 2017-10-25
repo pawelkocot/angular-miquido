@@ -1,0 +1,32 @@
+<ul>
+  <li>Angular change detection strategies</li>
+  <li>What happens when you put a function returning new value in input</li>
+  <li>Lifecycle</li>
+  <li>DOM manipulation</li>
+  <li></li>
+  <li></li>
+</ul>
+
+
+<h2>Mutating part of an object</h2>
+<button (click)="mutate($event)">mutate</button>
+<button (click)="update()">update</button>
+<button (click)="addClass($event)">add class</button>
+
+<h2>Fancy Input setter</h2>
+<app-input-test [fancySetter]="mutable.value"></app-input-test>
+
+<!--<app-input-test [data]="mutable"></app-input-test>-->
+{{mutable | json}}
+
+<!--{{getData() | json}}-->
+
+<hr />
+<app-input-test [data]="mutable"></app-input-test>
+<!--<app-input-test [data]="getData()"></app-input-test>-->
+
+
+@TODO X
+add lifecycle hooks
+explain more about DOM maniopulation
+Intl weird import
