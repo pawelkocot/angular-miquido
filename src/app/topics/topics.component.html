@@ -1,10 +1,11 @@
 <ul>
+  <li>Lifecycle</li>
   <li>Angular change detection strategies</li>
   <li>What happens when you put a function returning new value in input</li>
-  <li>Lifecycle</li>
   <li>DOM manipulation</li>
-  <li></li>
-  <li></li>
+  <li>Observables</li>
+  <li>Using globals like localStorage</li>
+  <li>Using window</li>
 </ul>
 
 
@@ -26,7 +27,10 @@
 <!--<app-input-test [data]="getData()"></app-input-test>-->
 
 
-@TODO X
-add lifecycle hooks
-explain more about DOM maniopulation
-Intl weird import
+<h2>Lifecycle</h2>
+<img src="https://angular.io/generated/images/guide/lifecycle-hooks/hooks-in-sequence.png" alt="lifecycle"> 
+<br><br>
+
+<button (click)="useChildsMethod()">Use Child's Public method</button>
+
+<app-lifecycle #lifecycle [data]="mutable"></app-lifecycle>

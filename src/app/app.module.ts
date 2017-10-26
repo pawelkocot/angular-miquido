@@ -7,6 +7,7 @@ import { InputTestComponent } from './topics/input-test/input-test.component';
 import { StreamComponent } from './stream/stream.component';
 import { StreamService } from './stream/stream.service';
 import { SubStreamComponent } from './stream/sub-stream/sub-stream.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SubStreamComponent } from './stream/sub-stream/sub-stream.component';
     TopicsComponent,
     InputTestComponent,
     StreamComponent,
-    SubStreamComponent
+    SubStreamComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule

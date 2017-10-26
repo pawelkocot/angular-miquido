@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { LifecycleComponent } from '../lifecycle/lifecycle.component';
 
 @Component({
   selector: 'app-topics',
@@ -9,7 +10,12 @@ export class TopicsComponent implements OnInit {
   public mutable = {
     value: 0
   };
+
+  @ViewChild('lifecycle')
+  public child: LifecycleComponent;
+
   constructor() { }
+
 
   ngOnInit() {
     // setTimeout(() => this.updateData(), 1500);
@@ -25,6 +31,10 @@ export class TopicsComponent implements OnInit {
 
   public update() {
     this.mutable = {value: this.mutable.value + 1};
+  }
+
+  public useChildsMethod() {
+    this.child.callComponentsPublicMethod();
   }
 
 }
