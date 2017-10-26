@@ -1,0 +1,5 @@
+<h1>Current country code: {{ countryCode }}</h1>
+<button (click)="generate()">change</button>
+<button (click)="toggleSub()">toggle sub</button>
+
+<app-sub-stream *ngIf="subVisible"></app-sub-stream>
